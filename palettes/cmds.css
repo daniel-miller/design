@@ -1,0 +1,14 @@
+/* cmds-app (Vesper): indigo, the single accent. Matches the base defaults, stated here so every
+   app reads its accent from its own palette file. */
+
+@theme static {
+  --color-primary: oklch(0.47 0.22 273);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-link: oklch(0.47 0.22 273);
+}
+
+.dark {
+  --color-primary: oklch(0.62 0.2 273);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-link: oklch(0.72 0.16 269);
+}

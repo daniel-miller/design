@@ -1,0 +1,25 @@
+/* festival: violet, and the one palette whose cards carry a shadow.
+
+   Tailwind inlines theme shadow values into the shadow-card utility, so a .dark override of
+   --shadow-card itself never reaches the page. The theme token points at --card-shadow instead,
+   which is an ordinary custom property the dark theme can replace. */
+
+:root {
+  --card-shadow: 0 1px 2px oklch(0.21 0.04 265 / 0.06), 0 4px 16px oklch(0.21 0.04 265 / 0.05);
+}
+
+@theme static {
+  --color-primary: #7c3aed;
+  --color-primary-foreground: #ffffff;
+  --color-link: #7c3aed;
+
+  --shadow-card: var(--card-shadow);
+}
+
+.dark {
+  --color-primary: #7c3aed;
+  --color-primary-foreground: #ffffff;
+  --color-link: oklch(0.72 0.16 292);
+
+  --card-shadow: 0 1px 2px oklch(0 0 0 / 0.3), 0 4px 16px oklch(0 0 0 / 0.25);
+}
