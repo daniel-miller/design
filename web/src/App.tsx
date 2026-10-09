@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { PageContainer } from "@/components/ui/page-container";
 import { PageHeader } from "@/components/ui/page-header";
@@ -17,24 +17,18 @@ import {
   storedPalette,
   type Palette,
 } from "./palettes";
+import { BadgeSection } from "./sections/badge";
+import { ButtonSection } from "./sections/button";
+import { CardSection } from "./sections/card";
+import { CheckboxSection, InputSection } from "./sections/forms";
 
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
-  return (
-    <section id={id} className="scroll-mt-20 space-y-3">
-      <h2 className="text-lg font-semibold">{title}</h2>
-      <div className="border-border bg-card rounded-card space-y-4 border p-6">{children}</div>
-    </section>
-  );
-}
-
-function Row({ label, children }: { label: string; children: ReactNode }) {
-  return (
-    <div className="flex flex-wrap items-center gap-3">
-      <span className="text-muted-foreground w-24 shrink-0 text-xs">{label}</span>
-      {children}
-    </div>
-  );
-}
+const sections = [
+  { id: "button", title: "Button", Component: ButtonSection },
+  { id: "badge", title: "Badge", Component: BadgeSection },
+  { id: "card", title: "Card", Component: CardSection },
+  { id: "input", title: "Input", Component: InputSection },
+  { id: "checkbox", title: "Checkbox", Component: CheckboxSection },
+];
 
 export function App() {
   const [palette, setPalette] = useState<Palette>(storedPalette);
@@ -90,28 +84,17 @@ export function App() {
           subtitle="Every registry component, rendered from the registry source"
         />
 
-        <Section id="button" title="Button">
-          <Row label="Variants">
-            <Button>Save changes</Button>
-            <Button variant="outline">Cancel</Button>
-            <Button variant="ghost">Skip</Button>
-            <Button variant="destructive">Delete course</Button>
-          </Row>
-          <Row label="Sizes">
-            <Button size="sm">Small</Button>
-            <Button>Default</Button>
-            <Button size="lg">Large</Button>
-            <Button size="icon" variant="outline" aria-label="Settings">
-              <i className="fa-sharp fa-regular fa-gear" aria-hidden="true" />
-            </Button>
-          </Row>
-          <Row label="Disabled">
-            <Button disabled>Save changes</Button>
-            <Button variant="outline" disabled>
-              Cancel
-            </Button>
-          </Row>
-        </Section>
+        <nav aria-label="Components" className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+          {sections.map(({ id, title }) => (
+            <a key={id} href={`#${id}`} className="text-link hover:underline">
+              {title}
+            </a>
+          ))}
+        </nav>
+
+        {sections.map(({ id, Component }) => (
+          <Component key={id} />
+        ))}
       </PageContainer>
     </div>
   );

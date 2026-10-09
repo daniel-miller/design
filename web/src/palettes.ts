@@ -14,7 +14,11 @@ export function isPalette(value: string | null): value is Palette {
 const PALETTE_KEY = "design.palette";
 const THEME_KEY = "design.theme";
 
+// ?palette= and ?theme= take precedence over the stored choice, so a headless capture can ask for
+// any combination.
 export function storedPalette(): Palette {
+  const requested = new URLSearchParams(location.search).get("palette");
+  if (isPalette(requested)) return requested;
   try {
     const value = localStorage.getItem(PALETTE_KEY);
     if (isPalette(value)) return value;
