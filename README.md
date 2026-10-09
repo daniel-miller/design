@@ -20,8 +20,11 @@ accent.
 - `registry.json` - the shadcn registry manifest; `npm run build:registry` writes it to
   `public/r/`, which is what gets published to R2.
 - `docs/` - visual foundations and page guidelines.
-- `web/` - the specimen app (every component in every palette) and the library build that
-  Claude Design syncs from.
+- `web/` - the specimen app: every component, in every palette, rendered from the registry
+  sources.
+- `lib/` - `@daniel-miller/design`, the registry built as one library (`npm run build:lib`) for
+  the Claude Design converter. Its `dist/styles.css` is the cmds palette with the fonts and Font
+  Awesome inlined, compiled from the classes in the registry and the specimen.
 
 ## Using it in an app
 
