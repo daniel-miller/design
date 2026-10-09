@@ -1,0 +1,15 @@
+/* The stylesheet every Claude Design layout receives: the cmds palette, the fonts, and Font
+   Awesome Pro. Tailwind only compiles classes it finds, so it scans the specimen as well as the
+   registry; the specimen's layouts cover the utilities a design is likely to reach for. */
+@import "tailwindcss";
+@import "../tokens/base.css";
+@import "../palettes/cmds.css";
+
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/geist-mono";
+@import "@fortawesome/fontawesome-pro/css/fontawesome.min.css";
+@import "@fortawesome/fontawesome-pro/css/sharp-regular.min.css";
+@import "@fortawesome/fontawesome-pro/css/sharp-solid.min.css";
+
+@source "../registry";
+@source "../web/src";

@@ -4,12 +4,14 @@
   "type": "module",
   "scripts": {
     "build:registry": "shadcn build",
-    "dev": "npm run dev -w web"
+    "dev": "npm run dev -w web",
+    "build:lib": "npm run build -w lib"
   },
   "devDependencies": {
     "shadcn": "4.21.4"
   },
   "workspaces": [
-    "web"
+    "web",
+    "lib"
   ]
 }
