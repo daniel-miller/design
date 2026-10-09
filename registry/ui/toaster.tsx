@@ -14,11 +14,7 @@ const paletteVariables = {
  * Takes the theme rather than reading a hook, because every app resolves its theme its own way
  * (localStorage key, a cookie shared with a marketing site). Omitted, sonner follows the OS.
  */
-export function Toaster({
-  theme = "system",
-}: {
-  theme?: "light" | "dark" | "system";
-}) {
+export function Toaster({ theme = "system" }: { theme?: "light" | "dark" | "system" }) {
   return (
     <Sonner
       theme={theme}
