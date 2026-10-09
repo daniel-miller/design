@@ -6,7 +6,7 @@
     @import "./design/base.css";
     @import "./design/palettes/<app>.css";
 
-  The accent group below is the cmds palette, so base.css alone still renders. A palette sets
+  The accent group below is a default indigo, so base.css alone still renders. A palette sets
   --color-primary, --color-primary-foreground, and --color-link; the derived tokens recompute from
   them through relative colour syntax, and a palette may still pin any of them exactly.
 */

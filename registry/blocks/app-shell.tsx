@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn";
  * The warm background tint sits on the sidebar, so navigation reads as chrome rather than as the
  * brightest plane on screen, and the content area is white, so cards separate by their hairline
  * borders instead of fighting a tinted page for contrast. In dark mode the same two tokens keep the
- * sidebar one step darker than the content. This is the cmds shell handoff, variant 1b.
+ * sidebar one step darker than the content. This is variant 1b of the shell design handoff.
  *
  * Presentation only. Each app keeps its own routing, auth and menus. SidebarNavItem takes the
  * router's NavLink through asChild and styles the active item from aria-current="page", which
