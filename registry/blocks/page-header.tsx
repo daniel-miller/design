@@ -30,7 +30,7 @@ export function PageHeader({ title, subtitle, actions, restricted, className }: 
               onClick={() => setRulesOpen(true)}
               title="View access rules"
               aria-label="View access rules"
-              className="text-muted-foreground/70 hover:text-foreground focus-visible:ring-primary rounded p-0.5 focus-visible:ring-2 focus-visible:outline-none"
+              className="text-muted-foreground/70 hover:text-foreground focus-visible:ring-primary flex rounded p-0.5 focus-visible:ring-2 focus-visible:outline-none"
             >
               <i className="fa-sharp fa-regular fa-lock text-base" aria-hidden="true" />
             </button>
