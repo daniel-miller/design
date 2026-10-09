@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 // a test or by browser automation, and looks nothing like the rest of the app.
 //
 // The default tone is danger on purpose: the person should pause here. And nothing takes autofocus,
-// so Enter alone never confirms - Radix focuses the close button first.
+// so Enter alone never confirms - Radix focuses the first focusable element, which is Cancel.
 //
 // Carbon's footer rule: the escape sits on the left and the outcome on the right, so the eye and
 // the tab order both end on the button that acts.
