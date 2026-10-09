@@ -402,7 +402,9 @@
         "@radix-ui/react-slot@^1"
       ],
       "registryDependencies": [
-        "@design/cn"
+        "@design/cn",
+        "@design/button",
+        "@design/sheet"
       ],
       "files": [
         {

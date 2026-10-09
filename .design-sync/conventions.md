@@ -49,7 +49,8 @@ For status, prefer `Badge variant="success" | "warning" | "destructive"` over ha
   `aria-label`.
 - **App shell:** `AppShell` > `Sidebar` (tinted) beside `ShellBody` > `Topbar` and `ShellMain`
   (white). The active `SidebarNavItem` is a soft primary fill with a left rule, never a solid
-  pill. Give every nav item at one level an icon, or none of them.
+  pill. Give every nav item at one level an icon, or none of them. Below md the `Sidebar` hides
+  and a second copy sits in `SidebarSheet`, opened by `SidebarTrigger` first in the `Topbar`.
 - **Page shape:** `PageContainer` > `PageHeader` (title, subtitle, `actions`) > `Card`s, inside
   `ShellMain`. Cards sit on white, so their hairline border is what separates them. Destructive
   settings go last, in a `DangerZone`.
