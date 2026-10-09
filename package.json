@@ -1,0 +1,11 @@
+{
+  "name": "design",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:registry": "shadcn build"
+  },
+  "devDependencies": {
+    "shadcn": "4.21.4"
+  }
+}

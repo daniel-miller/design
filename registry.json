@@ -1,0 +1,416 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "design",
+  "homepage": "https://github.com/daniel-miller/design",
+  "items": [
+    {
+      "name": "cn",
+      "type": "registry:lib",
+      "dependencies": [
+        "clsx@^2",
+        "tailwind-merge@^3"
+      ],
+      "files": [
+        {
+          "path": "registry/lib/cn.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "tokens",
+      "type": "registry:item",
+      "dependencies": [
+        "tw-animate-css@^1"
+      ],
+      "files": [
+        {
+          "path": "tokens/base.css",
+          "type": "registry:file",
+          "target": "~/src/styles/design/base.css"
+        }
+      ]
+    },
+    {
+      "name": "palette-bump",
+      "type": "registry:item",
+      "registryDependencies": [
+        "@design/tokens"
+      ],
+      "files": [
+        {
+          "path": "palettes/bump.css",
+          "type": "registry:file",
+          "target": "~/src/styles/design/palettes/bump.css"
+        }
+      ]
+    },
+    {
+      "name": "palette-cmds",
+      "type": "registry:item",
+      "registryDependencies": [
+        "@design/tokens"
+      ],
+      "files": [
+        {
+          "path": "palettes/cmds.css",
+          "type": "registry:file",
+          "target": "~/src/styles/design/palettes/cmds.css"
+        }
+      ]
+    },
+    {
+      "name": "palette-festival",
+      "type": "registry:item",
+      "registryDependencies": [
+        "@design/tokens"
+      ],
+      "files": [
+        {
+          "path": "palettes/festival.css",
+          "type": "registry:file",
+          "target": "~/src/styles/design/palettes/festival.css"
+        }
+      ]
+    },
+    {
+      "name": "palette-openscorm",
+      "type": "registry:item",
+      "registryDependencies": [
+        "@design/tokens"
+      ],
+      "files": [
+        {
+          "path": "palettes/openscorm.css",
+          "type": "registry:file",
+          "target": "~/src/styles/design/palettes/openscorm.css"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "dependencies": [
+        "class-variance-authority@^0.7"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-slot@^1",
+        "class-variance-authority@^0.7"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "dependencies": [
+        "react-day-picker@^10"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/calendar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-checkbox@^1"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-dialog@^1"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu@^2"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "file-dropzone",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/ui/file-dropzone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-label@^2"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-popover@^1"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-select@^2"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-dialog@^1",
+        "class-variance-authority@^0.7"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-slider@^1"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/slider.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-tabs@^1"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toaster",
+      "type": "registry:ui",
+      "dependencies": [
+        "sonner@^2"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/toaster.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-tooltip@^1"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/ui/tooltip.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "confirm-dialog",
+      "type": "registry:block",
+      "registryDependencies": [
+        "@design/dialog",
+        "@design/button"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/confirm-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "danger-zone",
+      "type": "registry:block",
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/danger-zone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
