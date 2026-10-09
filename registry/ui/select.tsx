@@ -70,7 +70,9 @@ export const SelectContent = React.forwardRef<
       position={position}
       className={cn(
         "border-border bg-card text-card-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:fade-in-0 data-[state=closed]:fade-out-0 data-[state=open]:zoom-in-95 data-[state=closed]:zoom-out-95 relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-lg border shadow-md",
-        position === "popper" && "translate-y-1",
+        // Away from the trigger on whichever side Radix placed the list. A plain translate-y-1
+        // pushes a list that opened upward down into the trigger it came from.
+        position === "popper" && "data-[side=bottom]:translate-y-1 data-[side=top]:-translate-y-1",
         className,
       )}
       {...props}
