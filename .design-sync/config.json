@@ -1,0 +1,149 @@
+{
+  "projectId": "eae8e665-84b7-4e4d-a6b2-fe1676d82b62",
+  "shape": "package",
+  "pkg": "@daniel-miller/design",
+  "globalName": "Design",
+  "buildCmd": "npm run build:lib",
+  "componentSrcMap": {
+    "CardContent": null,
+    "CardDescription": null,
+    "CardFooter": null,
+    "CardHeader": null,
+    "CardTitle": null,
+    "DangerZoneItem": null,
+    "DialogClose": null,
+    "DialogContent": null,
+    "DialogDescription": null,
+    "DialogFooter": null,
+    "DialogHeader": null,
+    "DialogOverlay": null,
+    "DialogPortal": null,
+    "DialogTitle": null,
+    "DialogTrigger": null,
+    "DropdownMenuCheckboxItem": null,
+    "DropdownMenuContent": null,
+    "DropdownMenuGroup": null,
+    "DropdownMenuItem": null,
+    "DropdownMenuLabel": null,
+    "DropdownMenuPortal": null,
+    "DropdownMenuRadioGroup": null,
+    "DropdownMenuRadioItem": null,
+    "DropdownMenuSeparator": null,
+    "DropdownMenuSub": null,
+    "DropdownMenuSubContent": null,
+    "DropdownMenuSubTrigger": null,
+    "DropdownMenuTrigger": null,
+    "PopoverAnchor": null,
+    "PopoverContent": null,
+    "PopoverTrigger": null,
+    "SelectContent": null,
+    "SelectGroup": null,
+    "SelectItem": null,
+    "SelectLabel": null,
+    "SelectScrollDownButton": null,
+    "SelectScrollUpButton": null,
+    "SelectSeparator": null,
+    "SelectTrigger": null,
+    "SelectValue": null,
+    "SheetClose": null,
+    "SheetContent": null,
+    "SheetDescription": null,
+    "SheetHeader": null,
+    "SheetOverlay": null,
+    "SheetPortal": null,
+    "SheetTitle": null,
+    "SheetTrigger": null,
+    "TableBody": null,
+    "TableCell": null,
+    "TableHead": null,
+    "TableHeader": null,
+    "TableRow": null,
+    "TabsContent": null,
+    "TabsList": null,
+    "TabsTrigger": null,
+    "TooltipContent": null,
+    "TooltipProvider": null,
+    "TooltipTrigger": null
+  },
+  "docsMap": {
+    "Button": "../.design-sync/groups/actions.md",
+    "Badge": "../.design-sync/groups/actions.md",
+    "Card": "../.design-sync/groups/layout.md",
+    "PageHeader": "../.design-sync/groups/layout.md",
+    "PageContainer": "../.design-sync/groups/layout.md",
+    "Input": "../.design-sync/groups/forms.md",
+    "Label": "../.design-sync/groups/forms.md",
+    "Textarea": "../.design-sync/groups/forms.md",
+    "Checkbox": "../.design-sync/groups/forms.md",
+    "Calendar": "../.design-sync/groups/pickers.md",
+    "FileDropzone": "../.design-sync/groups/pickers.md",
+    "Slider": "../.design-sync/groups/pickers.md",
+    "Dialog": "../.design-sync/groups/overlays.md",
+    "DropdownMenu": "../.design-sync/groups/overlays.md",
+    "Popover": "../.design-sync/groups/overlays.md",
+    "Select": "../.design-sync/groups/overlays.md",
+    "Sheet": "../.design-sync/groups/overlays.md",
+    "Tooltip": "../.design-sync/groups/overlays.md",
+    "Table": "../.design-sync/groups/content.md",
+    "Tabs": "../.design-sync/groups/content.md",
+    "Skeleton": "../.design-sync/groups/content.md",
+    "ConfirmDialog": "../.design-sync/groups/feedback.md",
+    "CopyableId": "../.design-sync/groups/feedback.md",
+    "DangerZone": "../.design-sync/groups/feedback.md",
+    "Toaster": "../.design-sync/groups/feedback.md"
+  },
+  "overrides": {
+    "Dialog": {
+      "cardMode": "single",
+      "viewport": "720x420"
+    },
+    "ConfirmDialog": {
+      "cardMode": "single",
+      "viewport": "720x380"
+    },
+    "Sheet": {
+      "cardMode": "single",
+      "viewport": "760x460"
+    },
+    "Select": {
+      "cardMode": "single",
+      "primaryStory": "Open",
+      "viewport": "560x380"
+    },
+    "DropdownMenu": {
+      "cardMode": "single",
+      "viewport": "520x460"
+    },
+    "Popover": {
+      "cardMode": "single",
+      "viewport": "520x260"
+    },
+    "Tooltip": {
+      "cardMode": "single",
+      "viewport": "420x140"
+    },
+    "Toaster": {
+      "cardMode": "single",
+      "viewport": "720x420"
+    },
+    "Table": {
+      "cardMode": "column"
+    },
+    "Card": {
+      "cardMode": "column"
+    },
+    "PageContainer": {
+      "cardMode": "column"
+    },
+    "PageHeader": {
+      "cardMode": "column"
+    }
+  },
+  "provider": {
+    "component": "TooltipProvider",
+    "props": {
+      "delayDuration": 200
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}
