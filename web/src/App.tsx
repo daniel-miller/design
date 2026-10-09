@@ -29,6 +29,7 @@ import {
   ToastSection,
 } from "./sections/feedback";
 import { CheckboxSection, InputSection } from "./sections/forms";
+import { AppShellSection } from "./sections/layout";
 import {
   DialogSheetSection,
   DropdownMenuSection,
@@ -41,6 +42,7 @@ const sections = [
   { id: "button", title: "Button", Component: ButtonSection },
   { id: "badge", title: "Badge", Component: BadgeSection },
   { id: "card", title: "Card", Component: CardSection },
+  { id: "app-shell", title: "App shell", Component: AppShellSection },
   { id: "input", title: "Input", Component: InputSection },
   { id: "checkbox", title: "Checkbox", Component: CheckboxSection },
   { id: "select", title: "Select", Component: SelectSection },
