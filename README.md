@@ -19,6 +19,8 @@ accent.
 - `registry/lib/` - `cn.ts` and `dates.ts`.
 - `registry.json` - the shadcn registry manifest; `npm run build:registry` writes it to
   `public/r/`, which is what gets published to R2.
+- `tools/publish-registry.ps1` - builds the registry and uploads it (see
+  [Publishing the registry](#publishing-the-registry)).
 - `docs/` - visual foundations and page guidelines.
 - `web/` - the specimen app: every component, in every palette, rendered from the registry
   sources.
@@ -74,6 +76,26 @@ npm run dev
 
 The specimen opens on port 5180. It renders the registry sources in place under the same import
 paths an app uses, and swaps whole palette stylesheets from the toolbar.
+
+## Publishing the registry
+
+A change merged into `registry/`, `tokens/` or `palettes/` reaches no app until it is published.
+Apps install from `https://design.danielmiller.ca/r/{name}.json`, which serves the Cloudflare R2
+bucket `design`. Publish from the repo root:
+
+```powershell
+npx wrangler@4 login    # once per machine
+./tools/publish-registry.ps1
+```
+
+The script runs `npm run build:registry` and uploads every file in `public/r/`, overwriting what
+is there. Each file is cached for five minutes, so apps see a publish within minutes.
+
+Removing an item from `registry.json` does not remove its published file. Delete that by hand:
+
+```powershell
+npx wrangler@4 r2 object delete design/r/<name>.json --remote
+```
 
 ## Conventions
 
