@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    // The specimen renders the registry sources in place, under the same import paths an app
+    // sees once the CLI has copied them in. Blocks share components/ui with the primitives, so
+    // that path falls back from registry/ui to registry/blocks.
+    "paths": {
+      "@/components/ui/*": ["../registry/ui/*", "../registry/blocks/*"],
+      "@/lib/*": ["../registry/lib/*"]
+    }
+  },
+  "include": ["src", "../registry"]
+}

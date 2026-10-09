@@ -58,6 +58,20 @@ Font Awesome Pro is not a registry dependency, because installing it needs the P
 app installs `@fortawesome/fontawesome-pro` and imports `fontawesome.min.css` plus the two styles
 the registry uses, `sharp-regular.min.css` and `sharp-solid.min.css`.
 
+## Running the specimen
+
+The repo root is an npm workspace with `web/` as its one member, so the dependencies hoist to the
+root `node_modules`, where the registry sources outside `web/` can resolve them. Installing needs
+`FONTAWESOME_NPM_AUTH_TOKEN` set, which `.npmrc` reads:
+
+```powershell
+npm install
+npm run dev
+```
+
+The specimen opens on port 5180. It renders the registry sources in place under the same import
+paths an app uses, and swaps whole palette stylesheets from the toolbar.
+
 ## Conventions
 
 - Icons are Font Awesome Pro everywhere.

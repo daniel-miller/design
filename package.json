@@ -3,9 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:registry": "shadcn build"
+    "build:registry": "shadcn build",
+    "dev": "npm run dev -w web"
   },
   "devDependencies": {
     "shadcn": "4.21.4"
-  }
+  },
+  "workspaces": [
+    "web"
+  ]
 }

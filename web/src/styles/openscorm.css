@@ -1,0 +1,8 @@
+/* One complete stylesheet per palette. Palettes are written for :root, so importing all four into
+   one sheet would leave whichever came last in charge; the specimen swaps whole sheets instead. */
+@import "tailwindcss";
+@import "../../../tokens/base.css";
+@import "../../../palettes/openscorm.css";
+
+/* The registry sits outside web/, beyond Tailwind's automatic source detection. */
+@source "../../../registry";
