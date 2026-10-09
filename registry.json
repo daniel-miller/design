@@ -18,6 +18,16 @@
       ]
     },
     {
+      "name": "dates",
+      "type": "registry:lib",
+      "files": [
+        {
+          "path": "registry/lib/dates.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
       "name": "tokens",
       "type": "registry:item",
       "dependencies": [
@@ -400,6 +410,16 @@
       ]
     },
     {
+      "name": "copyable-id",
+      "type": "registry:block",
+      "files": [
+        {
+          "path": "registry/blocks/copyable-id.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "danger-zone",
       "type": "registry:block",
       "registryDependencies": [
@@ -408,6 +428,33 @@
       "files": [
         {
           "path": "registry/blocks/danger-zone.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "page-container",
+      "type": "registry:block",
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/page-container.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "page-header",
+      "type": "registry:block",
+      "registryDependencies": [
+        "@design/dialog",
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/page-header.tsx",
           "type": "registry:ui"
         }
       ]
