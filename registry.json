@@ -396,6 +396,22 @@
       ]
     },
     {
+      "name": "app-shell",
+      "type": "registry:block",
+      "dependencies": [
+        "@radix-ui/react-slot@^1"
+      ],
+      "registryDependencies": [
+        "@design/cn"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/app-shell.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "confirm-dialog",
       "type": "registry:block",
       "registryDependencies": [

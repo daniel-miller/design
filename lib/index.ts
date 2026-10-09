@@ -27,6 +27,7 @@ export * from "../registry/ui/toaster";
 // Apps import toast from sonner directly; a design has only the bundle, so it needs it here.
 export { toast } from "sonner";
 export * from "../registry/ui/tooltip";
+export * from "../registry/blocks/app-shell";
 export * from "../registry/blocks/confirm-dialog";
 export * from "../registry/blocks/copyable-id";
 export * from "../registry/blocks/danger-zone";

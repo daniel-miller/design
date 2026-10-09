@@ -14,8 +14,8 @@ accent.
 - `tokens/base.css` - shared type, radius, spacing, neutrals, and status colours, light and dark.
 - `palettes/<app>.css` - one file per app: its accent, plus any neutral overrides.
 - `registry/ui/` - the shadcn-style primitives.
-- `registry/blocks/` - shared page pieces (page header, page container, copyable id, confirm
-  dialog, danger zone).
+- `registry/blocks/` - shared page pieces (app shell, page header, page container, copyable id,
+  confirm dialog, danger zone).
 - `registry/lib/` - `cn.ts` and `dates.ts`.
 - `registry.json` - the shadcn registry manifest; `npm run build:registry` writes it to
   `public/r/`, which is what gets published to R2.
