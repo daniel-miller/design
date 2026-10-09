@@ -1,5 +1,6 @@
 /*
-  Shared tokens for every app. Import after Tailwind and before exactly one palette:
+  Shared tokens for every app. The app installs tw-animate-css, then imports this file after
+  Tailwind and before exactly one palette:
 
     @import "tailwindcss";
     @import "<design>/tokens/base.css";
@@ -9,6 +10,10 @@
   --color-primary, --color-primary-foreground, and --color-link; the derived tokens recompute from
   them through relative colour syntax, and a palette may still pin any of them exactly.
 */
+
+/* Enter and exit animations for the floating surfaces (dialogs, menus, popovers, selects,
+   tooltips). Their animate-in / fade / zoom classes produce nothing without it. */
+@import "tw-animate-css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -151,5 +156,16 @@ input[type="checkbox"]:disabled {
   h5,
   h6 {
     color: var(--color-foreground-strong);
+  }
+}
+
+/* Anyone who has asked the OS for less motion gets none: surfaces appear and disappear at once. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
