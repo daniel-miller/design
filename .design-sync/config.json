@@ -53,6 +53,15 @@
     "SheetPortal": null,
     "SheetTitle": null,
     "SheetTrigger": null,
+    "ShellBody": null,
+    "ShellMain": null,
+    "Sidebar": null,
+    "SidebarBrand": null,
+    "SidebarFooter": null,
+    "SidebarGroupLabel": null,
+    "SidebarNav": null,
+    "SidebarNavItem": null,
+    "SkipLink": null,
     "TableBody": null,
     "TableCell": null,
     "TableHead": null,
@@ -63,12 +72,14 @@
     "TabsTrigger": null,
     "TooltipContent": null,
     "TooltipProvider": null,
-    "TooltipTrigger": null
+    "TooltipTrigger": null,
+    "Topbar": null
   },
   "docsMap": {
     "Button": "../.design-sync/groups/actions.md",
     "Badge": "../.design-sync/groups/actions.md",
     "Card": "../.design-sync/groups/layout.md",
+    "AppShell": "../.design-sync/groups/layout.md",
     "PageHeader": "../.design-sync/groups/layout.md",
     "PageContainer": "../.design-sync/groups/layout.md",
     "Input": "../.design-sync/groups/forms.md",
@@ -137,6 +148,10 @@
     },
     "PageHeader": {
       "cardMode": "column"
+    },
+    "AppShell": {
+      "cardMode": "single",
+      "viewport": "960x420"
     }
   },
   "provider": {

@@ -25,7 +25,7 @@ are all available.
 
 | Role | Classes |
 |---|---|
-| Surfaces | `bg-background` (page), `bg-card` (panels), `bg-muted` (wells, hover) |
+| Surfaces | `bg-card` (content area and panels), `bg-background` (sidebar chrome), `bg-muted` (wells, hover) |
 | Text | `text-foreground`, `text-foreground-strong`, `text-muted-foreground` (helpers, captions), `text-link` |
 | Lines | `border-border`, `border-input-border`, `divide-y` |
 | Action | `bg-primary text-primary-foreground`, `hover:bg-primary-hover` |
@@ -47,8 +47,12 @@ For status, prefer `Badge variant="success" | "warning" | "destructive"` over ha
   `<i className="fa-sharp fa-regular fa-plus" aria-hidden="true" />` (`fa-solid` for filled).
   Put the icon before the label inside `Button`; an icon-only button uses `size="icon"` and an
   `aria-label`.
-- **Page shape:** `PageContainer` > `PageHeader` (title, subtitle, `actions`) > `Card`s.
-  Destructive settings go last, in a `DangerZone`.
+- **App shell:** `AppShell` > `Sidebar` (tinted) beside `ShellBody` > `Topbar` and `ShellMain`
+  (white). The active `SidebarNavItem` is a soft primary fill with a left rule, never a solid
+  pill. Give every nav item at one level an icon, or none of them.
+- **Page shape:** `PageContainer` > `PageHeader` (title, subtitle, `actions`) > `Card`s, inside
+  `ShellMain`. Cards sit on white, so their hairline border is what separates them. Destructive
+  settings go last, in a `DangerZone`.
 - **Confirm before destroying.** Use `ConfirmDialog` (danger tone by default), not a plain
   `Dialog`, for delete and archive.
 - **Dialog footers** put Cancel (`variant="outline"`) before the primary action.

@@ -17,7 +17,7 @@ specimen sections.
 
 ## Decisions
 
-- **Families only.** 59 sub-parts (`DialogContent`, `SelectItem`, `CardHeader`...) are
+- **Families only.** 69 sub-parts (`DialogContent`, `SelectItem`, `CardHeader`...) are
   `componentSrcMap: null`. They stay in the bundle; each family's preview composes them.
 - **Groups follow the specimen sections**, through one-line category stubs in
   `.design-sync/groups/` mapped by `docsMap`.
