@@ -21,6 +21,12 @@ import { BadgeSection } from "./sections/badge";
 import { ButtonSection } from "./sections/button";
 import { CardSection } from "./sections/card";
 import { CheckboxSection, InputSection } from "./sections/forms";
+import {
+  DialogSheetSection,
+  DropdownMenuSection,
+  PopoverTooltipSection,
+  SelectSection,
+} from "./sections/overlays";
 
 const sections = [
   { id: "button", title: "Button", Component: ButtonSection },
@@ -28,6 +34,10 @@ const sections = [
   { id: "card", title: "Card", Component: CardSection },
   { id: "input", title: "Input", Component: InputSection },
   { id: "checkbox", title: "Checkbox", Component: CheckboxSection },
+  { id: "select", title: "Select", Component: SelectSection },
+  { id: "dropdown-menu", title: "Dropdown menu", Component: DropdownMenuSection },
+  { id: "popover", title: "Popover", Component: PopoverTooltipSection },
+  { id: "dialog", title: "Dialog", Component: DialogSheetSection },
 ];
 
 export function App() {
