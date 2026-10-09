@@ -34,7 +34,7 @@ The registry is namespaced `@design`. Without the namespace, a bare name such as
 
 ```json
 "registries": {
-  "@design": "https://<registry host>/r/{name}.json"
+  "@design": "https://design.danielmiller.ca/r/{name}.json"
 }
 ```
 
