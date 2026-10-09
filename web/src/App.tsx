@@ -9,6 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Toaster } from "@/components/ui/toaster";
 import {
   applyPalette,
   applyTheme,
@@ -20,6 +21,13 @@ import {
 import { BadgeSection } from "./sections/badge";
 import { ButtonSection } from "./sections/button";
 import { CardSection } from "./sections/card";
+import { SkeletonSection, TableSection, TabsSection } from "./sections/content";
+import {
+  ConfirmDialogSection,
+  CopyableIdSection,
+  DangerZoneSection,
+  ToastSection,
+} from "./sections/feedback";
 import { CheckboxSection, InputSection } from "./sections/forms";
 import {
   DialogSheetSection,
@@ -27,6 +35,7 @@ import {
   PopoverTooltipSection,
   SelectSection,
 } from "./sections/overlays";
+import { CalendarSection, FileDropzoneSection, SliderSection } from "./sections/pickers";
 
 const sections = [
   { id: "button", title: "Button", Component: ButtonSection },
@@ -38,6 +47,16 @@ const sections = [
   { id: "dropdown-menu", title: "Dropdown menu", Component: DropdownMenuSection },
   { id: "popover", title: "Popover", Component: PopoverTooltipSection },
   { id: "dialog", title: "Dialog", Component: DialogSheetSection },
+  { id: "tabs", title: "Tabs", Component: TabsSection },
+  { id: "table", title: "Table", Component: TableSection },
+  { id: "skeleton", title: "Skeleton", Component: SkeletonSection },
+  { id: "slider", title: "Slider", Component: SliderSection },
+  { id: "calendar", title: "Calendar", Component: CalendarSection },
+  { id: "file-dropzone", title: "File dropzone", Component: FileDropzoneSection },
+  { id: "toast", title: "Toast", Component: ToastSection },
+  { id: "confirm-dialog", title: "Confirm dialog", Component: ConfirmDialogSection },
+  { id: "danger-zone", title: "Danger zone", Component: DangerZoneSection },
+  { id: "copyable-id", title: "Copyable id", Component: CopyableIdSection },
 ];
 
 export function App() {
@@ -106,6 +125,8 @@ export function App() {
           <Component key={id} />
         ))}
       </PageContainer>
+
+      <Toaster theme={dark ? "dark" : "light"} />
     </div>
   );
 }
